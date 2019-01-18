@@ -270,7 +270,7 @@ public class ColorTransformPanel extends JPanel {
 
 			mHSLSaturationGainAdjustLabel = new JLabel(language.getString("process.transform.HSLSaturationGainlabel")); //$NON-NLS-1$
 			add(mHSLSaturationGainAdjustLabel);
-			mHSLSaturationGainAdjustSpinner = new JSpinner(new SpinnerNumberModel(mColorConfig.mHSLSaturationGainAdjustSpinner, 0.0, 1024.0, 0.01));
+			mHSLSaturationGainAdjustSpinner = new JSpinner(new SpinnerNumberModel(mColorConfig.mHSLSaturationGainAdjustSpinner, 0.0, 1.0, 0.01));
 			mHSLSaturationGainAdjustSpinner.setMaximumSize(maxDim);
 			mHSLSaturationGainAdjustSpinner.setToolTipText(language.getString("process.transform.hslsaturationlabeltooltip"));
 			mHSLSaturationGainAdjustSpinner.addChangeListener(mChangeListener);
@@ -278,7 +278,7 @@ public class ColorTransformPanel extends JPanel {
 
 			mHSLLuminanceGainAdjustLabel = new JLabel(language.getString("process.transform.HSLluminanceGainlabel")); //$NON-NLS-1$
 			add(mHSLLuminanceGainAdjustLabel);
-			mHSLLuminanceGainAdjustSpinner = new JSpinner(new SpinnerNumberModel(mColorConfig.mHSLLuminanceGainAdjustSpinner, 0.0, 1024.0, 0.01));
+			mHSLLuminanceGainAdjustSpinner = new JSpinner(new SpinnerNumberModel(mColorConfig.mHSLLuminanceGainAdjustSpinner, 0.0, 1.0, 0.01));
 			mHSLLuminanceGainAdjustSpinner.setMaximumSize(maxDim);
 			mHSLLuminanceGainAdjustSpinner.setToolTipText(language.getString("process.transform.hslluminancelabeltooltip"));
 			mHSLLuminanceGainAdjustSpinner.addChangeListener(mChangeListener);
